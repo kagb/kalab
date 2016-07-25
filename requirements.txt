@@ -1,0 +1,6 @@
+Flask
+requests
+gunicorn
+jieba
+wordcloud
+goose-extractor
