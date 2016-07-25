@@ -11,9 +11,3 @@ app = BP_SITE
 @app.route('/')
 def index():
     return render_template('index.html')
-
-
-@app.route('/mono')
-def mono():
-    filename = 'static/img/mono.jpg'
-    return send_file(filename, mimetype='image/gif')
