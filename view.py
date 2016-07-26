@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Blueprint, send_file, render_template
+from flask import Blueprint, render_template
 
 __all__ = ['BP_SITE']
 
