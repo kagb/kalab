@@ -9,11 +9,6 @@ module.exports = {
     filename: '[name].js'
   },
 
-  devServer: {
-    inline: true,
-    port: 8080
-  },
-
   module: {
     loaders: [
        {
