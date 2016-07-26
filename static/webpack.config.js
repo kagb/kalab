@@ -6,7 +6,6 @@ module.exports = {
 
   output: {
     path: './dist/js/',
-    publicPath: './js/',
     filename: '[name].js'
   },
 
@@ -17,13 +16,12 @@ module.exports = {
 
   module: {
     loaders: [
-    { test: /\.js?$/, loaders: ['babel'], exclude: /node_modules/ },
-    { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/}
+       {
+           test: /\.jsx?$/,
+           exclude: /node_modules/,
+           loader: 'babel',
+           query: { presets: ['es2015', 'react']}
+        }
     ]
-  },
-
-  resolve:{
-    root: '/pomy/github/flux-example/src', 
-    extensions:['','.js','.json']
   },
 };
