@@ -6,3 +6,4 @@
 *.property
 local_conf.py
 test_conf.py
+static/node_modules/*
