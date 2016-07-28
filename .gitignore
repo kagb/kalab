@@ -7,4 +7,6 @@
 local_conf.py
 test_conf.py
 static/node_modules/*
+.sass-cache/*
 static/.sass-cache/*
+static/css/*

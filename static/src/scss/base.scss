@@ -1,5 +1,11 @@
-$base-color: #000;
+$base-color: #333333;
 
 body {
+    border: 0px;
+    padding: 0px {
+        left: 20px;
+        right: 20px
+    };
+    margin: 0px;
     background-color: $base-color;
 }

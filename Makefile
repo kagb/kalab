@@ -1,5 +1,8 @@
-run_webpack:
+build_js:
 	cd static && webpack --display-error-details
+
+build_css:
+	sass static/src/scss/base.scss static/css/base.css
 
 startgunicorn:
 	supervisorctl start evilka
