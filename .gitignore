@@ -4,7 +4,11 @@
 *.tmp
 *.swp
 *.property
+*.css.map
 local_conf.py
 test_conf.py
-static/node_modules/*
+static/css/*
 static/dist/*
+static/node_modules/*
+static/.sass-cache/*
+.sass-cache/*

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'kalab';
+    src:url('/static/fonts/adamfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$base-color: #333333;
+$base-font: kalab, Arial, 微软雅黑;
+
+body {
+    font-family: $base-font; 
+    border: 0px;
+    padding: 0px {
+        left: 20px;
+        right: 20px
+    };
+    margin: 0px;
+    background-color: $base-color;
+}
