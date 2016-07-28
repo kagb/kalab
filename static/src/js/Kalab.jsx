@@ -1,9 +1,14 @@
 import React from 'react';
 
-class Kalab extends React.Component {
+class CenterText extends React.Component {
    render() {
-         return (<div>Hello World!!!</div>);
+         return (
+             <div class='center-txt'>
+                {this.props.txt}
+             </div>
+         );
       }
 }
 
-export default Kalab;
+
+export default CenterText;
