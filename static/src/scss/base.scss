@@ -6,6 +6,8 @@
 }
 
 $base-color: #333333;
+$word-color: white;
+$word-size-1: 200px;
 $base-font: kalab, Arial, 微软雅黑;
 
 body {
@@ -17,4 +19,11 @@ body {
     };
     margin: 0px;
     background-color: $base-color;
+
+    #kalab{
+        margin-top: 100px;
+        text-align: center;
+        color: $word-color;
+        font-size: $word-size-1;
+    }
 }
