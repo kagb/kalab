@@ -12,5 +12,10 @@ body {
     padding-right: 20px;
   margin: 0px;
   background-color: #333333; }
+  body #kalab {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 200px; }
 
 /*# sourceMappingURL=base.css.map */
