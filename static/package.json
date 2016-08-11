@@ -4,8 +4,8 @@
   "description": "well ka",
   "main": "webpack.config.js",
   "dependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
@@ -18,5 +18,13 @@
     "start": "webpack-dev-server --hot"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kagb/kalab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kagb/kalab/issues"
+  },
+  "homepage": "https://github.com/kagb/kalab#readme"
 }
