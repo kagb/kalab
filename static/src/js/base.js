@@ -1,39 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var i_names = ['ABOUT', 'BLOG', 'TODAY', 'NLP-T', 'GOLANG', 'SPIDER'];
-
-var IndexTag = React.createClass({
+var ATag = React.createClass({
   render: function(){
-    return (<li className="i-tag">{this.props.tag_name}</li>)
+    return (<a className="a-tag">{this.props.tag_name}</a>)
   }
 });
 
-var Tags = React.createClass({
+var PTag = React.createClass({
   render: function(){
-    return (
-    <div className="tags">
-      <ui>
-        {
-          i_names.map(function (name){
-            return <IndexTag tag_name={name} />
-          })
-        }
-      </ui>
-    </div>
-    )
+    return (<p className="p-tag">{this.props.text}</p>)
   }
-});
+}); 
 
 var Main = React.createClass({
   render: function(){
     return (
-      <div className="page">
-        <div className="m-txt"> {this.props.txt} </div>
-        <Tags />
+      <div className="main">
+        <PTag text="Hi, this is Ka'Lab." />
+        <PTag text="It’s Friday Aug. 12, 2016, the 225 day of 2016." />
+        <PTag text="2311 guys had visited this page, much thanks." />
       </div>
     );
   }
 });
 
-ReactDOM.render(<Main txt="Hi, this is Ka'Lab" />, document.getElementById('kalab'));
+ReactDOM.render(
+    <Main />,
+    document.getElementById('kalab')
+);
