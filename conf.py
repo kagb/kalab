@@ -15,6 +15,6 @@ PC_HEADERS = {
 
 
 try:
-    from .local_conf import *
+    from local_conf import *
 except ImportError:
     pass
