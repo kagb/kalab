@@ -14,11 +14,29 @@ var PTag = React.createClass({
 }); 
 
 var Main = React.createClass({
+  getInitialState: function(){
+    return {date: new Date()};
+  },
+
+  set_time: function(){
+    window.setTimeout(function() {
+        this.setState({date: new Date()})
+    }.bind(this), 1000);
+  },
+
+  componentDidMount: function(){
+    this.set_time();
+  },
+
+  componentDidUpdate: function(){
+    this.set_time();
+  },
+
   render: function(){
     return (
       <div className="main">
         <PTag text="Hi, this is Ka'Lab." />
-        <PTag text="It’s Friday Aug. 12, 2016, the 225 day of 2016." />
+        <PTag text={"It's " + this.state.date.toTimeString()} />
         <PTag text="2311 guys had visited this page, much thanks." />
       </div>
     );
