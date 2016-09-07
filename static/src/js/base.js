@@ -36,7 +36,7 @@ var Main = React.createClass({
     return (
       <div className="main">
         <PTag text="Hi, this is Ka'Lab." />
-        <PTag text={"It's " + this.state.date.toTimeString()} />
+        <PTag text={"It's " + this.state.date.toString()} />
         <PTag text="2311 guys had visited this page, much thanks." />
       </div>
     );
