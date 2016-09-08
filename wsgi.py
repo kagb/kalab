@@ -10,6 +10,9 @@ def create_app(app_name):
     from views.index import BP_SITE
     app.register_blueprint(BP_SITE, url_perfix='')
 
+    from apis.pv import BP_PV
+    app.register_blueprint(BP_PV, url_perfix='')
+
     return app
 
 

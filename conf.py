@@ -14,7 +14,7 @@ PC_HEADERS = {
 }
 
 
-REDIS_HOST = 'localhost'
+REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
 try:
