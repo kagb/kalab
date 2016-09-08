@@ -16,7 +16,7 @@ var PTag = React.createClass({
 
 var Main = React.createClass({
   getInitialState: function(){
-    return {date: new Date()};
+    return {date: new Date(), pv: 1};
   },
 
   set_time: function(){
