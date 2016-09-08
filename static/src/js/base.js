@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery'; 
 
 var ATag = React.createClass({
   render: function(){
@@ -25,7 +26,9 @@ var Main = React.createClass({
   },
 
   componentDidMount: function(){
-    this.set_time();
+    this.serverRequest = $.get('/api/pv?page=index', function(data){
+      this.setState({pv: data.pv});
+    }.bind(this));
   },
 
   componentDidUpdate: function(){
@@ -37,7 +40,7 @@ var Main = React.createClass({
       <div className="main">
         <PTag text="Hi, this is Ka'Lab." />
         <PTag text={"It's " + this.state.date.toString()} />
-        <PTag text="2311 guys had visited this page, much thanks." />
+        <PTag text={this.state.pv + " guys have visited this page, much thanks."} />
       </div>
     );
   }
