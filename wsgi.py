@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask
+from flask_restful import Api
 from conf import *
 
 
@@ -10,8 +11,10 @@ def create_app(app_name):
     from views.index import BP_SITE
     app.register_blueprint(BP_SITE, url_perfix='')
 
-    from apis.pv import BP_PV
-    app.register_blueprint(BP_PV, url_perfix='')
+    api = Api(app)
+
+    from apis.pv import PagePV
+    api.add_resource(PagePV, '/api/pv')
 
     return app
 
