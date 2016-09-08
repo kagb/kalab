@@ -16,8 +16,6 @@ REDIS_PAGES_PV_KEY = 'reids-pages-pv-key-v1'
 def pv():
     page = request.args.get('page', u'index')
     name = REDIS_PAGES_PV_KEY
-    if redis_store.hexists(name, page):
-        redis_store.hincrby(name, page, 1)
-    else:
-        redis_store.hset(name, page, 1)
-    return jsonify({'count': int(redis_store.hget(name, page))})
+    pv = redis_store.hset_or_incr(name, page, 1)
+    ret = {'page': page, 'pv': int(pv)}
+    return jsonify(ret)
