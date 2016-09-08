@@ -14,6 +14,9 @@ PC_HEADERS = {
 }
 
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+
 try:
     from local_conf import *
 except ImportError:

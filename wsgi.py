@@ -7,7 +7,7 @@ from conf import *
 def create_app(app_name):
     app = Flask(app_name)
 
-    from view import BP_SITE
+    from views.index import BP_SITE
     app.register_blueprint(BP_SITE, url_perfix='')
 
     return app
