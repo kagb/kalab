@@ -4,3 +4,5 @@ gunicorn
 jieba
 wordcloud
 goose-extractor
+redis
+flask-restful

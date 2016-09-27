@@ -9,7 +9,10 @@ def create_app(app_name):
     app = Flask(app_name)
 
     from views.index import BP_SITE
-    app.register_blueprint(BP_SITE, url_perfix='')
+    app.register_blueprint(BP_SITE, url_prefix='')
+
+    from views.lab import BP_LAB
+    app.register_blueprint(BP_LAB, url_prefix='/lab')
 
     api = Api(app)
 
