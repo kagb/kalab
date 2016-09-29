@@ -6,3 +6,6 @@ wordcloud
 goose-extractor
 redis
 flask-restful
+wordcloud
+xarticle
+numpy
