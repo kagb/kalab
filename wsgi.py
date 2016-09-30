@@ -19,6 +19,9 @@ def create_app(app_name):
     from apis.pv import PagePV
     api.add_resource(PagePV, '/api/pv')
 
+    from apis.lab import WeiboWordCloud
+    api.add_resource(WeiboWordCloud, '/api/word_cloud/weibo')
+
     return app
 
 

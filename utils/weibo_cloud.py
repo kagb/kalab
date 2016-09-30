@@ -25,7 +25,7 @@ def weibo_article_word_cloud(weibo_url, filename='weibo.jpg'):
     img_file = generate_weibo_img(content, filename)
     if img_file:
         return (0, u'图片生成成功', img_file)
-    return (3, u'未知失败')
+    return (3, u'未知失败', '')
 
 
 def normalize_weibo_article_url(url):
@@ -72,4 +72,4 @@ def generate_weibo_img(content, filename, mask_path=MASK_PATH,
     image = wdcloud.to_image()
     file_path = file_path + filename
     image.save(file_path)
-    return filename
+    return file_path
