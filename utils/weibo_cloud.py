@@ -9,9 +9,9 @@ from wordcloud import WordCloud
 from xarticle.xarticle import XArticle
 
 FONT_PATH = 'static/fonts/jiaotong.ttf'
-MASK_PATH = 'static/img/weibo.png'
+MASK_PATH = 'static/img/mask.png'
 WEIBO_IMG_FILE_PATH = 'static/img/weibo/'
-BACKGROUND_COLOR = "#FFFFFF"
+BACKGROUND_COLOR = "#000000"
 STOPWORDS = [u'什么', u'为什么', u'这么', u'这个', u'那天', u'还要' u'这位']
 
 
